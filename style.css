@@ -1,0 +1,117 @@
+body {
+    /* display: flex;
+    justify-content: center;
+    flex-wrap: wrap; */
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(24,218,143,1) 37%, rgba(35,171,199,1) 80%);
+
+}
+
+
+
+.bodyContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+/*Main Header*/
+h1 {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+
+}
+/*Input Box Design*/
+.input-box {
+
+    align-content: center;
+}
+
+.color-input {
+    margin-left: 40vw;
+    margin-right: 2vw;
+    border: 0;
+    border-bottom: 2px solid gray;
+    outline: 0;
+    font-size: 1.3rem;
+    color: white;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+}
+/*Button Design*/
+.color-button {
+
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.color-button:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px; 
+}
+
+.color-button:active:after {
+    background: transparent;
+}
+
+.color-button:hover:before {
+    opacity: 1;
+}
+
+.color-button:active {
+    color: #000
+}
+
+/*Card Design and Box designs*/
+.card {
+    margin: 10px;;
+}
+
+.profil-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(19, 199, 199);
+    height: 280px;
+    width: 240px;
+    box-shadow: 0 4px 8px 0 rgba(189, 12, 12, 0.5);
+}
+
+.card-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(233, 178, 77);
+    width: 240px;
+    height: 50px;
+    margin-top: 10px;
+    box-shadow: 0 4px 8px 0 rgba(189, 12, 12, 0.5);
+}
+
+.description {
+    font-size: 20px;
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: bold;
+}
